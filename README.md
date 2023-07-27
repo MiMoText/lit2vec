@@ -13,8 +13,7 @@ This repository aims to analyze the relationships between literary works mention
 - `plt_3d.py`: plot all work_identifiers in a 3d space
 - `plot_3d.html`: output of `plt_3d.py` (download and open it with broswer to explore it)
 
-Screenshot of plots
+## Screenshot of plots
 
 ![Screenshot of 2d plot](plot_2d.png "Screenshot of 2d plot")
-
-![plot_3d.png "Screenshot of 3d plot](plot_3d.png "Screenshot of 3d plot")
+![Screenshot of 3d plot](plot_3d.png "Screenshot of 3d plot")
