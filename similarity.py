@@ -30,6 +30,6 @@ for i in range(len(word_list)):
 results.sort(key=lambda x: x[2], reverse=True)
 
 # Write the results to a tsv file
-with open("results.tsv", "w") as f:
+with open("similarity.tsv", "w") as f:
     for word1, word2, similarity in results:
         f.write(f"{word1}\t{word2}\t{similarity}\n")
