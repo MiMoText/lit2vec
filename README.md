@@ -1,6 +1,8 @@
 # lit2vec
 
-This repository aims to analyze the relationships between literary works mentioned in scholarly works. Different from [co-occurence approach](https://github.com/MiMoText/lit_cooccurence), we here use word2vec method to messeaur the context similarity between mentions of literary works in scholarly works. Using [gensim](https://pypi.org/project/gensim/), the word2vec model was trained on our scholarly work corpus, which currently 26 texts or 289,746 tokens. More scholarly works will be added in the future (s. [Zotero Library](https://www.zotero.org/groups/2342956/mimotext/tags/MMT_scholarly-work/library)). 
+This repository aims to analyze the relationships between literary works mentioned in scholarly works. Different from [co-occurence approach](https://github.com/MiMoText/lit_cooccurence), we here use word2vec method to messeaur the context similarity between mentions of literary works in scholarly works.
+
+Using [gensim](https://pypi.org/project/gensim/), the word2vec model was trained on our scholarly work corpus, which currently 26 texts or 289,746 tokens. More scholarly works will be added in the future (s. [Zotero Library](https://www.zotero.org/groups/2342956/mimotext/tags/MMT_scholarly-work/library)). 
 
 ## Table of Contents
 
