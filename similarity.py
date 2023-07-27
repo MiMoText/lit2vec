@@ -8,12 +8,12 @@ word_list = []
 results = []
 
 # Read the words from the file
-with open("work_identifier.txt", "r") as f:
+with open("work_identifier.tsv", "r") as f:
     for line in f:
         # Get the word from the line
-        word = line.strip()
+        word = line.split('\t')[0]
         # Ensure the word is in the vocabulary
-        if word in model.wv.key_to_index:
+        if word in model.wv.key_to_index and word != "identifier":
             word_list.append(word)
 
 # Compare each word with all other words
