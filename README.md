@@ -6,7 +6,7 @@ Using [gensim](https://pypi.org/project/gensim/), the word2vec model was trained
 
 ## Table of Contents
 
-- `work_identifier.txt`: contains all identifiers of literary works.
+- `work_identifier.tsv`: contains all identifiers of literary works and their MiMoText_ID as well as Wikidata_ID, if existing.
 - `word2vec.py`: script to train a word2vec model with `all.tsv` which cannot be published here due to copy right issue.
 - `word2vec.model`: word2vec model trained on MiMoText scholarly work corpus usding [gensim](https://pypi.org/project/gensim/).
 - `similarity.py`: compute similary between all work pairs, using [model.wv.similarity()](https://tedboy.github.io/nlps/generated/generated/gensim.models.Word2Vec.similarity.html).
