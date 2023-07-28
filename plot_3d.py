@@ -9,10 +9,12 @@ model = Word2Vec.load("word2vec.model")
 words = []
 
 # Read the words from the file
-with open("ne_list.txt", "r") as f:
+with open("work_identifier.tsv", "r") as f:
     for line in f:
-        word = line.strip()
-        if word in model.wv.key_to_index:
+        # Get the word from the line
+        word = line.split('\t')[0]
+        # Ensure the word is in the vocabulary
+        if word in model.wv.key_to_index and word != "identifier":
             words.append(word)
 
 # Get the word vectors
@@ -44,4 +46,4 @@ fig.update_layout(title='Word2Vec t-SNE 3D Visualization',
                              zaxis=dict(title='Dimension 3')))
 
 # Save the interactive plot as an HTML file
-fig.write_html("interactive_plot_3d.html")
+fig.write_html("plot_3d.html")
